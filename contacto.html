@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Formularios Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sitio Web de Javier Glez</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="info-section">
+            <h2>Formularios en Aplicaciones Web</h2>
+            <p>Los formularios HTML (<code>&lt;form&gt;</code>) son el componente clave para la interacción entre el usuario y el servidor. Permiten capturar datos introducidos por el usuario y enviarlos mediante métodos HTTP como <strong>GET</strong> o <strong>POST</strong>.</p>
+            <p>Es muy importante asociar cada elemento de entrada (<code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, etc.) con su respectiva etiqueta (<code>&lt;label&gt;</code>) mediante el atributo <code>for</code> e <code>id</code> para garantizar la accesibilidad web.</p>
+        </section>
+
+        <section class="form-section">
+            <h3>Formulario de Contacto</h3>
+            <form action="#" method="post" class="custom-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivo">Motivo de la consulta:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="dudas">Dudas sobre 2SMR</option>
+                        <option value="practicas">Consultas sobre prácticas</option>
+                        <option value="otro">Otro motivo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Formulario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web - Aplicaciones Web 2SMR</p>
+    </footer>
+
+</body>
+</html>
